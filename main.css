@@ -7,8 +7,8 @@ body {
 
 h1 {
 	font-size: 32px;
-  font-family: Palatino, 'Palatino Linotype', serif;
-  color: rgb(218,190,206);
+  font-family: 'Raleway', serif;
+  color: #2f5da8;
  
 }
 
@@ -18,16 +18,20 @@ h2 {
 
 #footer {
   font-size: 0.75rem;
+  font-family: "Raleway", sans-serif
 }
 
 
 .hero {
 	padding: 250px 0;
 	margin: 30px;
-  font-family: 'Trebuchet MS', Helvetica, sans-serif;
-  background-image: url("https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-2/bg.jpg") ;
-  background-size: cover;
+  font-family: "Raleway", sans-serif;
   color: #ffffff;
+
+  
+}
+img {
+  border-radius: 50%;
 }
 
 
@@ -36,29 +40,40 @@ p {
 
 }
 
-.hero a {
-	color: #00FFAA;
-	font-size: 1.25em;
-	text-decoration: none;
-}
 
-.nav {
+
+nav {
     display: inline;
   }
+
+nav ul {
+  list-style-type: none; 
+  display: inline;
+  color: DeepSkyBlue;
+  font-family: "Raleway", sans-serif;
+}
+nav li {
+  display: inline;
+}
   
   .contact-btn {
     float: right;
   }
   
-  .contact-btn a {
+  .contact-button a {
     cursor: pointer;
     margin-right: 30px;
-    padding: 8px 18px;
+    padding: 8px 8px;
     border: 1px solid #204156;
     position: relative;
+    font-family: "Raleway", sans-serif;
+    border-radius: 25px;
+    float: right;
   
   }
+
+
   
-  .contact-btn a:active {
+  .contact-button a:active {
      top: 1px;
   }
