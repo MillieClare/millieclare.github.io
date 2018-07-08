@@ -52,6 +52,7 @@ nav ul {
   color: DeepSkyBlue;
   font-family: "Raleway", sans-serif;
   float: left;
+  margin-top: 50px;
 }
 nav li {
   display: inline;
@@ -70,6 +71,7 @@ nav li {
     font-family: "Raleway", sans-serif;
     border-radius: 25px;
     float: right;
+    margin-top: 50px;
   
   }
 
