@@ -76,6 +76,26 @@ nav li {
   }
 
 
+a:link {
+    text-decoration: none;
+	color: DeepSkyBlue;
+}
+
+a:visited {
+    text-decoration: none;
+	color: DeepSkyBlue;
+}
+
+a:hover {
+    text-decoration: underline;
+	color: DeepSkyBlue;
+}
+
+a:active {
+    text-decoration: underline;
+	color: DeepSkyBlue;
+}
+
   
   .contact-button a:active {
      top: 1px;
