@@ -72,6 +72,8 @@ nav li {
     border-radius: 25px;
     float: right;
     margin-top: 50px;
+    text-decoration: none;
+    color: DeepSkyBlue;
   
   }
 
