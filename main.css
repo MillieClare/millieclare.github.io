@@ -91,10 +91,12 @@ a:visited {
 a:hover {
     text-decoration: underline;
 	color: DeepSkyBlue;
+	text-decoration-line: overline underline;
+    text-decoration-style: dashed;
 }
 
 a:active {
-    text-decoration: underline;
+    text-decoration: none;
 	color: DeepSkyBlue;
 }
 
