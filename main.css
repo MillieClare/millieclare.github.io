@@ -108,3 +108,10 @@ a:active {
   .contact-button a:active {
      top: 1px;
   }
+
+@media screen and (max-width: 600px) {
+    nav a {
+        float: none;
+        width: 100%;
+    }
+}
