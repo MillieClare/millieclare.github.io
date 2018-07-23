@@ -58,27 +58,6 @@ p {
   margin-top: 50px;
 }
 
-  
-  .contact-btn {
-    float: right;
-  }
-  
-  .contact-button a {
-    cursor: pointer;
-    margin-right: 30px;
-    padding: 8px 8px;
-    border: 1px solid #204156;
-    position: relative;
-    font-family: "Raleway", sans-serif;
-    border-radius: 25px;
-    float: right;
-    margin-top: 50px;
-    text-decoration: none;
-    color: DeepSkyBlue;
-  
-  }
-
-
 a:link {
     text-decoration: none;
 	color: DeepSkyBlue;
@@ -102,9 +81,7 @@ a:active {
 }
 
   
-  .contact-button a:active {
-     top: 1px;
-  }
+
 
 /*For mobiles */
 @media(max-width: 600px) {
