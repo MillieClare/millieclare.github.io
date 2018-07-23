@@ -84,7 +84,7 @@ a:active {
 
 
 /*For mobiles */
-@media(max-width: 600px) {
+@media(max-width: 750px) {
   .grid {
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, 20%); 50%;
