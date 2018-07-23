@@ -51,7 +51,6 @@ nav {
   }
 
 nav ul {
-  list-style-type: none; 
   display: inline;
   color: DeepSkyBlue;
   font-family: "Raleway", sans-serif;
@@ -109,9 +108,32 @@ a:active {
      top: 1px;
   }
 
-@media screen and (max-width: 600px) {
-    nav a {
-        float: none;
-        width: 100%;
-    }
+/*For mobiles */
+@media(max-width: 600px) {
+  .grid {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, 20%);
+    grid-row-gap: 20px;
+  }
+	nav ul {
+  display: inline;
+background-color: black;
+  color: DeepSkyBlue;
+  font-family: "Raleway", sans-serif;
+  float: none;
+  width: 100%;
+}
+nav li {
+   float: none;
+  width: 100%;
+}
+}
+
+/*For tablets */
+@media(max-width: 750px) {
+	.grid {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, 20%);
+    grid-row-gap: 20px;
+  }
 }
