@@ -99,6 +99,7 @@ a:active {
 }
 .topnav a:hover {
 	background-color: silver;
+	font-weight: bold;
 
 .hero {
   grid-row: 5 / span 1;
