@@ -91,11 +91,11 @@ a:active {
     grid-row-gap: 20px;
   }
 .topnav a {
-  display: inline;
   background-color: gray;
   color: DeepSkyBlue;
   font-family: "Raleway", sans-serif;
   float: none;
+  
   width: 100%;
 }
 .topnav a:hover {
@@ -110,7 +110,7 @@ a:active {
 @media(max-width: 750px) {
 	.grid {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(5, 20%);
+    grid-template-rows: repeat(4, 20%); 50%;
     grid-row-gap: 20px;
   }
 }
