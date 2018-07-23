@@ -46,20 +46,18 @@ p {
 
 
 
-nav {
-    display: inline;
-  }
 
-nav ul {
-  display: inline;
+
+.topnav a {
+  display: block;
   color: DeepSkyBlue;
+  text-align: center;
+  padding: 14px 16px;
   font-family: "Raleway", sans-serif;
   float: left;
   margin-top: 50px;
 }
-nav li {
-  display: inline;
-}
+
   
   .contact-btn {
     float: right;
@@ -115,20 +113,19 @@ a:active {
     grid-template-rows: repeat(4, 20%); 50%;
     grid-row-gap: 20px;
   }
-	nav ul {
+.topnav a {
   display: inline;
-background-color: black;
+  background-color: gray;
   color: DeepSkyBlue;
   font-family: "Raleway", sans-serif;
   float: none;
   width: 100%;
 }
-nav li {
-   float: none;
-  width: 100%;
-}
-  .hero {
-	grid-row: 5 / span 1;
+.topnav a:hover {
+	background-color: silver;
+
+.hero {
+  grid-row: 5 / span 1;
 	 
 }
 
