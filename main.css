@@ -112,7 +112,7 @@ a:active {
 @media(max-width: 600px) {
   .grid {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(5, 20%);
+    grid-template-rows: repeat(4, 20%); 50%;
     grid-row-gap: 20px;
   }
 	nav ul {
@@ -127,6 +127,9 @@ nav li {
    float: none;
   width: 100%;
 }
+  .hero {
+	grid-row: 5 / span 1;
+	 
 }
 
 /*For tablets */
