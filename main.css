@@ -94,20 +94,23 @@ a:active {
   color: DeepSkyBlue;
   font-family: "Raleway", sans-serif;
   float: none;
-  
   width: 100%;
 }
 .topnav a:hover {
 	background-color: silver;
 	font-weight: bold;
+	text-decoration: none;
 
 .hero {
   grid-row: 5 / span 1;
 	 
 }
-	 body {
-        background-color: olive;
+body {
+  background-color: olive;
     }
+	
+	
+	
 
 /*For tablets */
 @media(max-width: 768px) {
