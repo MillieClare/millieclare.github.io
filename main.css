@@ -98,11 +98,13 @@ a:active {
 
 /*For mobiles */
 @media(max-width: 600px) {
-  .grid {
+ /* .grid {
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, 20%) 50%;
-  }
-	
+  } */
+body {
+  background-color: olive;
+}
 /*depending on the max/min width situation. These guys just decide to replace my normal nav bar. Just because they can. Also, 
 the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
 	
@@ -124,9 +126,7 @@ the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
   grid-row: 5 / span 1;
 	 
 }
-body {
-  background-color: olive;
-}
+
 	
 }	
 	
