@@ -86,7 +86,7 @@ a:active {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 1; /*stack order*/
     top: 0;
     left: 0;
     background-color: #111;
@@ -116,10 +116,7 @@ a:active {
     margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+
 
 /* To hide sidenav if bigger than 600px */
 @media(min-width: 600px) {
