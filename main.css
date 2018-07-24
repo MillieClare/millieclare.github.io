@@ -121,7 +121,12 @@ a:active {
   .sidenav a {font-size: 18px;}
 }
 
-
+/* If the screen size is 600px wide or less, hide the element */
+@media screen and (max-width: 600px) {
+  div.sidenav {
+    display: none;
+  }
+}
 
 /*For mobiles */
 @media(min-width: 200px) {
