@@ -121,8 +121,8 @@ a:active {
   .sidenav a {font-size: 18px;}
 }
 
-/* If the screen size is 600px wide or less, hide the element */
-@media screen and (max-width: 600px) {
+/* To hide sidenav if bigger than 600px */
+@media(min-width: 600px) {
   div.sidenav {
     display: none;
   }
