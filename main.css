@@ -81,49 +81,7 @@ a:active {
 	color: DeepSkyBlue;
 }
 
-  
-
-
-/*For mobiles */
-@media(max-width: 600px) {
-  .grid {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, 20%); 50%;
-  }
-.topnav a {
-  background-color: gray;
-  color: DeepSkyBlue;
-  font-family: "Raleway", sans-serif;
-  float: none;
-  width: 100%;
-}
-.topnav a:hover {
-	background-color: silver;
-	font-weight: bold;
-	text-decoration: none;
-
-.hero {
-  grid-row: 5 / span 1;
-	 
-}
-body {
-  background-color: olive;
-}
-	
-	
-	
-
-/*For tablets */
-@media(max-width: 768px) {
-	.grid {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, 20%); 50%;
-    grid-row-gap: 20px;
-  }
-body {
- background-color: tan;
-    }
-	/* The side navigation menu */
+/* The side navigation menu */
 .sidenav {
     height: 100%; 
     width: 0; /* 0 width - this will be changed when JS added */
@@ -165,3 +123,48 @@ body {
 }
 
 
+  
+
+
+
+
+/*For mobiles */
+@media(max-width: 600px) {
+  .grid {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 20%); 50%;
+  }
+.topnav a {
+  background-color: gray;
+  color: DeepSkyBlue;
+  font-family: "Raleway", sans-serif;
+  float: none;
+  width: 100%;
+}
+.topnav a:hover {
+	background-color: silver;
+	font-weight: bold;
+	text-decoration: none;
+
+.hero {
+  grid-row: 5 / span 1;
+	 
+}
+body {
+  background-color: olive;
+}
+	
+	
+	
+
+/*For tablets */
+@media(max-width: 768px) {
+	.grid {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 20%); 50%;
+    grid-row-gap: 20px;
+  }
+body {
+ background-color: tan;
+    }
+	
