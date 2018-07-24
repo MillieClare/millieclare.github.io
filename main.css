@@ -89,7 +89,7 @@ a:active {
     z-index: 1; /*stack order*/
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: SlateGrey;
     overflow-x: hidden;/*overflow on the left and right sides and overflow-y is for the tops and bottoms*/
     transition: 0.5s;
     padding-top: 60px;
@@ -99,13 +99,13 @@ a:active {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: LightSkyBlue;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: RoyalBlue;
 }
 
 .sidenav .closebtn {
