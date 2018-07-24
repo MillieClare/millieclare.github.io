@@ -4,6 +4,11 @@ body {
 	text-align: center;
 	width: 100%;
 	background-color: lightblue;
+	/* this is one of the big issues. In order to know when I was working with tablet and mobile sizes, I put in a background-color which
+	would change when the browser page got small (if that makes sense?) this is so I can work on code for the @media parts that I would 
+	know if they were working because they'd only be visible when that particular background-color was being shown. I chose Olive for 
+	mobile and Tan for tablet. If you make the browser bigger/smaller it doesn't work and I DON'T KNOW WHY. I've spent a lot of time 
+	fiddling with the max/min-width, but it doesn't seem to make a difference :( */
 }
 
 h1 {
@@ -81,6 +86,14 @@ a:active {
 	color: DeepSkyBlue;
 }
 
+/* this is my fancy side nav which is going to be SO DOPE. I want this for tablets only, but because of previously mentioned 
+background colour issues I've started playing with it in here. You can see it in the index.HTML file too. I've also ended up putting
+the little bit of JS I use for it in there too. I did upload a seperate JS file with it in, but I don't think I linked them properly,
+I'd like to learn how for the final site.
+
+The code works for this side bar, which IS AWESOME. The bit that doesn't work, and why it's not currently showing up on the site, 
+is that I've added in a "don't show this bit of stuff when the screen is bigger than 768px" to try and make it only work for tablets.
+But instead it hides IT ALL NO MATTER THE WIDTH. */
 
 .sidenav {
     height: 100%;
@@ -118,8 +131,8 @@ a:active {
 
 
 
-/* To hide sidenav if bigger than 600px WHY U NO WORK */
-@media(min-width: 600px) {
+/* To hide sidenav if bigger than 768px WHY U NO WORK */
+@media(min-width: 769px) {
   div.sidenav {
     display: none;
   }
@@ -131,13 +144,16 @@ a:active {
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, 20%); 50%;
   }
+	
+/*depending on the max/min width situation. These guys just decide to replace my normal nav bar. Just because they can. Also, 
+the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
+	
 .topnav a {
   background-color: gray;
   color: DeepSkyBlue;
   font-family: "Raleway", sans-serif;
   float: none;
   width: 100%;
-  margin-top: 10px;
 }
 .topnav a:hover {
 	background-color: silver;
