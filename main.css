@@ -142,7 +142,7 @@ But instead it hides IT ALL NO MATTER THE WIDTH. */
 @media(max-width: 600px) {
   .grid {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(4, 20%), 50%;
+    grid-template-rows: repeat(4, 20%) 50%;
   }
 	
 /*depending on the max/min width situation. These guys just decide to replace my normal nav bar. Just because they can. Also, 
@@ -177,7 +177,7 @@ body {
 @media(max-width: 768px) {
 	.grid {
     grid-template-columns: 100%;
-    grid-template-rows: repeat(4, 20%), 50%;
+    grid-template-rows: repeat(4, 20%) 50%;
     grid-row-gap: 20px;
   }
 body {
