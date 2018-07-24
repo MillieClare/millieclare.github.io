@@ -87,8 +87,13 @@ a:active {
 }
 
 
-
-
+/* To hide sidenav if bigger than 768px WHY U NO WORK 
+@media(min-width: 769px) {
+  div.sidenav {
+    display: none;
+  }
+}
+*/
 
 
 /*For mobiles */
@@ -126,7 +131,7 @@ body {
 }	
 	
 
-/*For tablets */
+/*For tablets 
 @media(max-width: 768px) {
   .grid {
     grid-template-columns: 100%;
@@ -137,25 +142,25 @@ body {
  background-color: tan;
     }
 	
-/* this is my fancy side nav which is going to be SO DOPE. I want this for tablets only, but because of previously mentioned 
+this is my fancy side nav which is going to be SO DOPE. I want this for tablets only, but because of previously mentioned 
 background colour issues I've started playing with it in here. You can see it in the index.HTML file too. I've also ended up putting
 the little bit of JS I use for it in there too. I did upload a seperate JS file with it in, but I don't think I linked them properly,
 I'd like to learn how for the final site.
 
 The code works for this side bar, which IS AWESOME. The bit that doesn't work, and why it's not currently showing up on the site, 
 is that I've added in a "don't show this bit of stuff when the screen is bigger than 768px" to try and make it only work for tablets.
-But instead it hides IT ALL NO MATTER THE WIDTH. */
+But instead it hides IT ALL NO MATTER THE WIDTH.*/
 
-.sidenav {
+/*.sidenav {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1; /*stack order*/
-    top: 0;
+   /* top: 0;
     left: 0;
     background-color: SlateGrey;
     overflow-x: hidden;/*overflow on the left and right sides and overflow-y is for the tops and bottoms*/
-    transition: 0.5s;
+  /*  transition: 0.5s;
     padding-top: 60px;
 }
 
@@ -181,3 +186,4 @@ But instead it hides IT ALL NO MATTER THE WIDTH. */
 }
 
 }
+*/
