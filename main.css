@@ -126,7 +126,7 @@ a:active {
 }
 
 /*For mobiles */
-@media(min-width: 200px) {
+@media(max-width: 200px) {
   .grid {
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, 20%); 50%;
