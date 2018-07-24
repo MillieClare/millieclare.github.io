@@ -159,6 +159,8 @@ the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
 	background-color: silver;
 	font-weight: bold;
 	text-decoration: none;
+	
+	}
 
 .hero {
   grid-row: 5 / span 1;
@@ -168,7 +170,7 @@ body {
   background-color: olive;
 }
 	
-	
+}	
 	
 
 /*For tablets */
@@ -181,4 +183,4 @@ body {
 body {
  background-color: tan;
     }
-	
+	}
