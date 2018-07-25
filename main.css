@@ -45,7 +45,7 @@ img {
 
 img:hover {
     opacity: 0.5;
-    filter: alpha(opacity=50); /* to make it work for IE8 and other earlier oness  */
+    
 }
 
 p {
@@ -194,6 +194,6 @@ But instead it hides IT ALL NO MATTER THE WIDTH.*/
 
 
 }
-*/
+
 
 
