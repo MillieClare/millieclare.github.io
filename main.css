@@ -12,7 +12,7 @@ body {
 /* Also, 
 the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
 	
-.topnav a {
+#topnav a {
   background-color: gray;
   color: DeepSkyBlue;
   font-family: "Raleway", sans-serif;
@@ -21,14 +21,14 @@ the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
   text-decoration: none;
   text-align: center;
 }
-.topnav a:hover {
+#topnav a:hover {
 	background-color: silver;
 	font-weight: bold;
 	text-decoration: none;
 	
 	}
 
-.hero {
+#hero {
   grid-row: 5 / span 1;
 	 
 }
@@ -105,7 +105,7 @@ But instead it hides IT ALL NO MATTER THE WIDTH.*/
     font-size: 36px;
     margin-left: 50px;
 }
-.main {
+#main {
     transition: margin-left .5s;
     padding: 20px;
 }
@@ -114,7 +114,7 @@ But instead it hides IT ALL NO MATTER THE WIDTH.*/
 
 /*end of tablet*/
 
-.main {
+body {
 	height: 100%;
 	margin: 0;
 	text-align: center;
@@ -144,7 +144,7 @@ h2 {
 }
 
 
-.hero {
+#hero {
 	padding: 250px 0;
 	margin: 30px;
   font-family: "Raleway", sans-serif;
@@ -171,7 +171,7 @@ p {
 
 
 
-.topnav a {
+#topnav a {
   display: block;
   color: DeepSkyBlue;
   text-align: center;
