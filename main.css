@@ -16,8 +16,8 @@ the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
   background-color: gray;
   color: DeepSkyBlue;
   font-family: "Raleway", sans-serif;
-  float: none;
   width: 100%;
+  display: block;
 }
 .topnav a:hover {
 	background-color: silver;
