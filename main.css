@@ -45,12 +45,13 @@ the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
     display: none;
   }
 
-
+}
 /* To hide sidenav if bigger than 768px*/ 
 @media(min-width: 769px) {
   div.sidenav {
     display: none;
   }
+}
 
 /*For tablets */
 @media(min-width: 601px) and (max-width: 768px) {
