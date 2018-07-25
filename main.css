@@ -52,6 +52,11 @@ the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
     display: none;
   }
 }
+@media(max-width: 600px) {
+  div.sidenav {
+    display: none;
+  }
+}
 
 /*For tablets */
 @media(min-width: 601px) and (max-width: 768px) {
