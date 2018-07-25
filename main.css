@@ -105,6 +105,10 @@ But instead it hides IT ALL NO MATTER THE WIDTH.*/
     font-size: 36px;
     margin-left: 50px;
 }
+	#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
 
 }
 
