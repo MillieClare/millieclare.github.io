@@ -19,6 +19,7 @@ the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
   width: 100%;
   display: block;
   text-decoration: none;
+  text-align: center;
 }
 .topnav a:hover {
 	background-color: silver;
