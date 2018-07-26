@@ -98,6 +98,12 @@ But instead it hides IT ALL NO MATTER THE WIDTH.*/
     transition: margin-left .5s;
     padding: 20px;
 }
+	
+	
+}
+
+/*end of tablet*/
+
 
 /* To hide topnav if between tablet sizes*/ 
 @media(min-width: 601px) and (max-width: 768px) {
@@ -126,11 +132,7 @@ div.sidenav {
 div.sidenav {
     visibility: hidden;
   }
-}	
-	
 }
-
-/*end of tablet*/
 
 body {
 	height: 100%;
