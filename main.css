@@ -39,33 +39,7 @@ the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
 
 /*end of mobile*/
 
-/* To hide topnav if between tablet sizes*/ 
-@media(min-width: 601px) and (max-width: 768px) {
-#topnav {
-    visibility: hidden;
-  }
-}
-/*delete if doesn't work*/
-@media(min-width: 601px) and (max-width: 768px) {
-div.sidenav {
-    display: block;
-  }
-}
 
-
-/* To hide sidenav if bigger than 768px*/ 
-@media(min-width: 767px) {
-div.sidenav {
-    visibility: hidden;
-  }
-}
-
-
-@media(max-width: 600px) {
-div.sidenav {
-    visibility: hidden;
-  }
-}
 
 /*For tablets */
 @media(min-width: 601px) and (max-width: 768px) {
@@ -125,6 +99,35 @@ But instead it hides IT ALL NO MATTER THE WIDTH.*/
     padding: 20px;
 }
 
+/* To hide topnav if between tablet sizes*/ 
+@media(min-width: 601px) and (max-width: 768px) {
+#topnav {
+    visibility: hidden;
+  }
+}
+
+/*Hide sidenav links outside of tablet*/
+@media(min-width: 601px) and (max-width: 768px) {
+div.sidenav {
+    display: block;
+  }
+}
+
+
+
+@media(min-width: 767px) {
+div.sidenav {
+    visibility: hidden;
+  }
+}
+
+/* To hide sidenav if smaller than 600px*/ 
+@media(max-width: 600px) {
+div.sidenav {
+    visibility: hidden;
+  }
+}	
+	
 }
 
 /*end of tablet*/
