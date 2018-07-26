@@ -48,12 +48,12 @@ the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
 }
 /* To hide sidenav if bigger than 768px*/ 
 @media(min-width: 769px) {
-  div.sidenav {
+#sidenav {
     display: none;
   }
 }
 @media(max-width: 600px) {
-  div.sidenav {
+#sidenav {
     display: none;
   }
 }
