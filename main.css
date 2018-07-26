@@ -42,7 +42,7 @@ the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
 /* To hide topnav if between tablet sizes*/ 
 @media(min-width: 601px) and (max-width: 768px) {
 #topnav {
-    display: none;
+    visibility: hidden;
   }
 
 }
