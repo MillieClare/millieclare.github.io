@@ -44,10 +44,17 @@ the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
 #topnav {
     visibility: hidden;
   }
-
 }
+
+/* To hide menu button if not tablet sizes*/
+@media(min-width: 601px) and (max-width: 768px) {
+#menubtn {
+    visibility: hidden;
+  }
+}
+
 /* To hide sidenav if bigger than 768px*/ 
-@media(min-width: 769px) {
+@media(min-width: 600px) and (max-width: 767px) {
 div.sidenav {
     display: none;
   }
