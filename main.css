@@ -119,16 +119,8 @@ div.sidenav {
   }
 }
 
-
-
-@media(min-width: 767px) {
-div.sidenav {
-    visibility: hidden;
-  }
-}
-
-/* To hide sidenav if smaller than 600px*/ 
-@media(max-width: 600px) {
+/* To hide sidenav*/ 
+@media{
 div.sidenav {
     visibility: hidden;
   }
