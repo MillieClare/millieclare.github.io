@@ -46,12 +46,7 @@ the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
   }
 }
 
-/* To hide menu button if not tablet sizes*/
-@media(max-width: 600px) and (min-width: 768px) {
-#menubtn {
-    display: none;
-  }
-}
+
 
 /* To hide sidenav if bigger than 768px*/ 
 @media(min-width: 600px) and (max-width: 767px) {
