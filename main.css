@@ -49,11 +49,13 @@ the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
 
 
 /* To hide sidenav if bigger than 768px*/ 
-@media(min-width: 600px) and (max-width: 767px) {
+@media(min-width: 767px) {
 div.sidenav {
     visibility: hidden;
   }
 }
+
+
 @media(max-width: 600px) {
 div.sidenav {
     visibility: hidden;
