@@ -16,6 +16,10 @@
   display: block;
   text-decoration: none;
   text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 #topnav a:hover {
 	background-color: silver;
@@ -194,10 +198,8 @@ p {
   display: block;
   color: DeepSkyBlue;
   text-align: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 0px;
-  padding-right: 0px;
+	float: left;
+  padding: 14px 16px;
   font-family: "Raleway", sans-serif;
   margin-top: 5px;
 }
