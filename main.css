@@ -244,7 +244,49 @@ a:active {
 	height: 100%;
 	background: #f1f1f1;
 }
+
+.ip-header h1 {
+	margin: 0;
+}
+
 .ip-header .ip-inner {
 	display: block;
 	margin: 0 auto;
+}
+
+.ip-loader {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	cursor: default;
+	pointer-events: none;
+}
+
+.ip-loader {
+	bottom: 20%;
+}
+
+.ip-header {
+	min-width: 320px;
+	max-width: 480px;
+	width: 25%;
+}
+
+.ip-header path {
+	fill: #ef6e7e;
+}
+
+.ip-header .ip-loader svg path {
+	fill: none;
+	stroke-width: 6;
+}
+
+.ip-header .ip-loader svg path.ip-loader-circlebg {
+	stroke: #ddd;
+}
+
+.ip-header .ip-loader svg path.ip-loader-circle {
+	transition: stroke-dashoffset 0.2s;
+	stroke: #ef6e7e;
 }
