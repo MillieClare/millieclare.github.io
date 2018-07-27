@@ -7,9 +7,6 @@
     grid-template-rows: repeat(4, 20%) 50%;
   } 
 
-
-/* Also, 
-the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
 	
 #topnav a {
   background-color: gray;
@@ -131,12 +128,7 @@ body {
 	margin: 0;
 	text-align: center;
 	width: 100%;
-	background-color: lightblue;
-	/* this is one of the big issues. In order to know when I was working with tablet and mobile sizes, I put in a background-color which
-	would change when the browser page got small (if that makes sense?) this is so I can work on code for the @media parts that I would 
-	know if they were working because they'd only be visible when that particular background-color was being shown. I chose Olive for 
-	mobile and Tan for tablet. If you make the browser bigger/smaller it doesn't work and I DON'T KNOW WHY. I've spent a lot of time 
-	fiddling with the max/min-width, but it doesn't seem to make a difference :( */
+	
 }
 
 h1 {
