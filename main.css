@@ -132,14 +132,15 @@ body {
 }
 
 h1 {
-	font-size: 32px;
+	font-size: 18px;
   font-family: 'Raleway', serif;
   color: #2f5da8;
  
 }
 
 h2 {
-	font-size: 56px;
+	font-size: 2em;
+	color: gray;
 }
 
 #footer {
