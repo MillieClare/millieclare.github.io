@@ -51,7 +51,7 @@ var TxtRotate = function(el, toRotate, period) {
     };
 
     window.onload = function() {
-        var element = document.getElementById('myInput');
+        var element = document.getElementById('myInput').getAttribute("src");
         var toRotate = element.getAttribute('data-rotate');
         var period = element.getAttribute('data-period');
          new TxtRotate(element, JSON.parse(toRotate), period);
