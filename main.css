@@ -234,115 +234,58 @@ a:active {
 
 
 /*Loader */
-
-.ip-header {
-	position: fixed;
-	top: 0;
-	z-index: 100;
-	min-height: 480px;
-	width: 100%;
-	height: 100%;
-	background: #f1f1f1;
+#pageloader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* center children content horizontally */
+    align-items: center; /* center children content vertically */
+    z-index: 10000;
+    background: white;
 }
 
-.ip-header h1 {
-	margin: 0;
+.spinner {
+    width: 70px;
+    text-align: center;
+    opacity: 1;
+    transition: opacity .4s;
+}
+ 
+.spinner > div {
+    width: 18px;
+    height: 18px;
+    background-color: #333;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+ 
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+ 
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+ 
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+}
 }
 
-.ip-header .ip-inner {
-	display: block;
-	margin: 0 auto;
-}
-
-.ip-loader {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	opacity: 0;
-	cursor: default;
-	pointer-events: none;
-}
-
-.ip-loader {
-	bottom: 20%;
-}
-
-.ip-header {
-	min-width: 320px;
-	max-width: 480px;
-	width: 25%;
-}
-
-.ip-header path {
-	fill: #ef6e7e;
-}
-
-.ip-header .ip-loader svg path {
-	fill: none;
-	stroke-width: 6;
-}
-
-.ip-header .ip-loader svg path.ip-loader-circlebg {
-	stroke: #ddd;
-}
-
-.ip-header .ip-loader svg path.ip-loader-circle {
-	transition: stroke-dashoffset 0.2s;
-	stroke: #ef6e7e;
-}
-/*animation*/
-
-.loading .ip-loader {
-	opacity: 1;
-	animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
-}
-
-.loading .ip-loader {
-	animation-delay: 0.2s;
-}
-
-@keyframes animInitialHeader {
-	from { 
-		opacity: 0; 
-		transform: translate3d(0,800px,0); 
-	}
-}
-
-.loaded .ip-loader {
-	opacity: 1;
-}
-
-.loaded {
-	transform-origin: 50% 0;
-	animation: animLoadedLogo 1s cubic-bezier(0.7,0,0.3,1) forwards;
-}
-
-@keyframes animLoadedLogo {
-	to { 
-		transform: translate3d(0,100%,0) translate3d(0,50px,0) scale3d(0.65,0.65,1); 
-	}
-}
-
-.loaded  svg path {
-	transition: all 0.5s ease 0.3s;
-	fill: #fff;
-}
-
-.loaded .ip-loader {
-	animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
-}
-
-@keyframes animLoadedLoader {
-	to { 
-		opacity: 0; 
-		transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); 
-	}
-}
-
-.loaded .ip-header {
-	animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
-}
-
-@keyframes animLoadedHeader {
-	to { transform: translate3d(0,-100%,0); }
+#pageloader.dimissloader{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 0s 1s;
 }
