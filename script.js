@@ -13,7 +13,7 @@ function closeNav() {
 
 
     //Loading bar
-function(){
+;function(){
  
     var minloadingtime = 100
     var maxloadingtime = 3000
@@ -42,7 +42,7 @@ function(){
 
 //in case browser does not support transition
 
-(function(){ // Final page transition code
+;(function(){ // Final page transition code
  
     var animation = false,
     animationstring = 'animation',
