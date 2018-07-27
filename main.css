@@ -112,6 +112,11 @@ div.sidenav {
    display: none;
    visibility: hidden
   }
+div.menubtn {
+	display: none;
+   visibility: hidden
+  }
+	
 }
 /* To show sidenav*/ 
 @media(min-width: 601px) and (max-width: 768px) {
@@ -119,6 +124,10 @@ div.sidenav {
     display: block;
     visibility: visible;
   }
+div.menubtn {
+	visibile;
+}
+	
 }
 
 
