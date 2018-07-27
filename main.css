@@ -20,6 +20,7 @@
   padding-bottom: 16px;
   padding-left: 0px;
   padding-right: 0px;
+	text-align: center;
 }
 #topnav a:hover {
 	background-color: silver;
@@ -142,7 +143,6 @@ body {
 	height: 100%;
 	margin: 0px;
 	padding:0px;
-	text-align: center;
 	width: 100%;
 	
 	
@@ -152,18 +152,21 @@ h1 {
 	font-size: 18px;
   font-family: 'Raleway', serif;
   color: #2f5da8;
+	text-align: center;
  
 }
 
 h2 {
 	font-size: 14px;
 	color: SlateGrey;
+	text-align: center;
 	
 }
 
 #footer {
   font-size: 0.75rem;
   font-family: "Raleway", sans-serif
+	  text-align: center;
 }
 
 
