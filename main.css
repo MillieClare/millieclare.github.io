@@ -6,8 +6,7 @@
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, 20%) 50%;
   } 
-body {
-  background-color: olive;
+
 }
 /* Also, 
 the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
@@ -48,10 +47,7 @@ the bars have a REALLY ANNOYINGLY LARGE GAP between them and idk why*/
     grid-template-rows: repeat(4, 20%) 50%;
     grid-row-gap: 20px;
   }
-body {
- background-color: tan;
-    }
-	
+
 /*this is my fancy side nav which is going to be SO DOPE. I want this for tablets only, but because of previously mentioned 
 background colour issues I've started playing with it in here. You can see it in the index.HTML file too. I've also ended up putting
 the little bit of JS I use for it in there too. I did upload a seperate JS file with it in, but I don't think I linked them properly,
@@ -120,7 +116,7 @@ div.sidenav {
 }
 
 /* To hide sidenav*/ 
-@media{
+@media (max-width: 601px) and (min-width: 768px){
 div.sidenav {
     visibility: hidden;
   }
