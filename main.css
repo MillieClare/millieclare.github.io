@@ -116,12 +116,18 @@ div.sidenav {
 }
 
 /* To hide sidenav*/ 
-@media (max-width: 601px) and (min-width: 768px){
+@media (max-width: 600px) and (min-width: 769px){
 div.sidenav {
-    visibility: hidden;
-	display: none;
+   display: none;
   }
 }
+
+@media (max-width: 600px) and (min-width: 769px){
+#mySidenav {
+   display: none;
+  }
+}
+
 
 body {
 	height: 100%;
