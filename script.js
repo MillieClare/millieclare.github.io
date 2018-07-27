@@ -13,7 +13,7 @@ function closeNav() {
 
 
     //Loading bar
-;function(){
+;function(){ // basic code to dismiss page transition after page has loaded
  
     var minloadingtime = 100
     var maxloadingtime = 3000
@@ -22,24 +22,23 @@ function closeNav() {
     var elapsedTime
     var dismissonloadfunc, maxloadingtimer
      
-    window.addEventListener('load', dismissonloadfunc = function(){ 
-        clearTimeout(maxloadingtimer)
-        elapsedTime = new Date() - startTime 
+    window.addEventListener('load', dismissonloadfunc = function(){ // when page loads
+        clearTimeout(maxloadingtimer) // cancel dismissal of transition after maxloadingtime time
+        elapsedTime = new Date() - startTime // get time elapsed once page has loaded
         var hidepageloadertimer = (elapsedTime > minloadingtime)? 0 : minloadingtime - elapsedTime
      
         setTimeout(function(){
-            document.getElementById('pageloader').classList.add('dimissloader') 
+            document.getElementById('pageloader').classList.add('dimissloader') // dismiss transition
         }, hidepageloadertimer)
      
     }, false)
      
-    maxloadingtimer = setTimeout(function(){ 
-        window.removeEventListener('load', dismissonloadfunc, false) 
-        document.getElementById('pageloader').classList.add('dimissloader') 
+    maxloadingtimer = setTimeout(function(){ // force dismissal of page transition after maxloadingtime time
+        window.removeEventListener('load', dismissonloadfunc, false) // cancel onload event function call
+        document.getElementById('pageloader').classList.add('dimissloader') // dismiss transition
     }, maxloadingtime)
  
 })();
-
 //in case browser does not support transition
 
 ;(function(){ // Final page transition code
