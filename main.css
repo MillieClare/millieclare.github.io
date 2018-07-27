@@ -1,4 +1,4 @@
-
+/*why isn't mobile centered? Where is this odd margin coming from?*/
 
 /*For mobiles */
 @media(min-width: 200px) and (max-width: 599px) {
@@ -126,6 +126,7 @@ div.sidenav {
 body {
 	height: 100%;
 	margin: 0px;
+	padding:0px;
 	text-align: center;
 	width: 100%;
 	padding: 1em 2em
