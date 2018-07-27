@@ -8,7 +8,7 @@
   } 
 
 	
-.topnav a {
+#topnav a {
   background-color: gray;
   color: DeepSkyBlue;
   font-family: "Raleway", sans-serif;
@@ -22,7 +22,7 @@
   padding-right: 0px;
 	text-align: center;
 }
-.topnav a:hover {
+#topnav a:hover {
 	background-color: silver;
 	font-weight: bold;
 	text-decoration: none;
@@ -200,7 +200,7 @@ p {
 
 
 
-.topnav a {
+#topnav a {
   display: block;
   color: DeepSkyBlue;
   text-align: center;
