@@ -125,7 +125,8 @@ div.sidenav {
     visibility: visible;
   }
 div.menubtn {
-	visibile;
+  visibility: visibile;
+  display: block;
 }
 	
 }
