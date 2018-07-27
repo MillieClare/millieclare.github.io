@@ -152,8 +152,8 @@ h2 {
 
 
 .hero {
-	padding: 250px 0;
-	margin: 30px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   font-family: "Raleway", sans-serif;
   color: #ffffff;
 
