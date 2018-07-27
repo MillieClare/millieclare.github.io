@@ -110,7 +110,7 @@ But instead it hides IT ALL NO MATTER THE WIDTH.*/
 
 
 /* To hide sidenav*/ 
-@media(max-width: 601px) and (min-width: 768px) {
+@media {
 div.sidenav {
    display: none;
    visibility: hidden
