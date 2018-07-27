@@ -1,4 +1,6 @@
 
+// side nav
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
@@ -8,6 +10,8 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
+
+// Type carousel
 var TxtRotate = function(el, toRotate, period) {
       this.toRotate = toRotate;
       this.el = el;
@@ -51,9 +55,25 @@ var TxtRotate = function(el, toRotate, period) {
     };
 
     window.onload = function() {
-        var element = document.getElementById('myInput').getAttribute("src");
-        var toRotate = element.getAttribute('data-rotate').getAttribute("src");
-        var period = element.getAttribute('data-period').getAttribute("src");
-         new TxtRotate(element, JSON.parse(toRotate), period).getAttribute("src");
+        var element = document.getElementById('myInput');
+        var toRotate = element.getAttribute('data-rotate');
+        var period = element.getAttribute('data-period');
+         new TxtRotate(element, JSON.parse(toRotate), period);
 
       }
+    
+    //Loading bar
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 20;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
