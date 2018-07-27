@@ -234,6 +234,13 @@ a:active {
 
 
 /*Loader */
+
+#pageloader.dimissloader{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 0s 1s;
+}
+
 #pageloader{
     position: fixed;
     left: 0;
@@ -262,19 +269,19 @@ a:active {
     display: inline-block;
     -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
     animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-	animation-iteration-count: 3;
+	
 }
  
 .spinner .bounce1 {
     -webkit-animation-delay: -0.32s;
     animation-delay: -0.32s;
-	animation-iteration-count: 3;
+	
 }
  
 .spinner .bounce2 {
     -webkit-animation-delay: -0.16s;
     animation-delay: -0.16s;
-	animation-iteration-count: 3;
+	
 }
  
 @keyframes sk-bouncedelay {
