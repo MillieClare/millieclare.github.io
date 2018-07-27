@@ -116,6 +116,12 @@ div.sidenav {
    visibility: hidden
   }
 }
+/* To show sidenav*/ 
+@media(min-width: 601px) and (max-width: 768px) {
+div.sidenav {
+    display: block;
+  }
+}
 
 
 
