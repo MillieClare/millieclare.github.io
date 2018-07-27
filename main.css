@@ -108,21 +108,15 @@ But instead it hides IT ALL NO MATTER THE WIDTH.*/
   }
 }
 
-/*Hide sidenav links outside of tablet*/
-@media(min-width: 601px) and (max-width: 768px) {
-div.sidenav {
-    display: block;
-  }
-}
 
 /* To hide sidenav*/ 
-@media (max-width: 600px) and (min-width: 769px){
+@media {
 div.sidenav {
    display: none;
   }
 }
 
-@media (max-width: 600px) and (min-width: 769px){
+@media {
 #mySidenav {
    display: none;
   }
