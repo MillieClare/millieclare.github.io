@@ -163,13 +163,27 @@ h1 {
 
 h2 {
   font-size: 14px;
-  color: SlateGrey;
-	
-	
+  color: SlateGrey;	
+}
+
+h3 {
+
+}
+
+p.alignleft {
+	font-size: 12px;
+	text-align: left;
+}
+
+p.alignright {
+	font-size: 12px;
+	text-align: right;
+
 }
 
 #footer {
   font-size: 0.75rem;
+  bottom: 10px;
 }
 
 
