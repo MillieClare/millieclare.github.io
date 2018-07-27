@@ -24,7 +24,7 @@
 	
 	}
 
-#hero {
+.hero {
   grid-row: 5 / span 1;
 	 
 }
@@ -149,7 +149,7 @@ h2 {
 }
 
 
-#hero {
+.hero {
 	padding: 250px 0;
 	margin: 30px;
   font-family: "Raleway", sans-serif;
