@@ -144,29 +144,32 @@ body {
 	margin: 0px;
 	padding:0px;
 	width: 100%;
-	
+
 	
 }
 
+p {
+  colour: SlateGrey;
+  font-size: 12px;
+}
+	
+
 h1 {
-	font-size: 18px;
-  font-family: 'Raleway', serif;
+  font-size: 18px;
   color: #2f5da8;
-	text-align: center;
+	
  
 }
 
 h2 {
-	font-size: 14px;
-	color: SlateGrey;
-	text-align: center;
+  font-size: 14px;
+  color: SlateGrey;
+	
 	
 }
 
 #footer {
   font-size: 0.75rem;
-  font-family: "Raleway", sans-serif;
-  text-align: center;
 }
 
 
@@ -174,7 +177,7 @@ h2 {
   padding-top: 75px;
   padding-bottom: 75px;
   font-family: "Raleway", sans-serif;
-  color: #ffffff;
+  
 
   
 }
@@ -191,10 +194,7 @@ img:hover {
   opacity: 0.5;
 }
 
-p {
-  font-size: 2rem;
 
-}
 
 
 
