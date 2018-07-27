@@ -125,9 +125,10 @@ div.sidenav {
 
 body {
 	height: 100%;
-	margin: 0;
+	margin: 20px;
 	text-align: center;
 	width: 100%;
+	padding: 1em 2em
 	
 }
 
@@ -140,7 +141,8 @@ h1 {
 
 h2 {
 	font-size: 2em;
-	color: gray;
+	color: SlateGrey;
+	font-family: 'Raleway', serif;
 }
 
 #footer {
