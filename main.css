@@ -111,18 +111,7 @@ div.menubtn {
 }
 
 
-/* To hide sidenav*/ 
-@media {
-div.sidenav {
-   display: none;
-   visibility: hidden
-  }
-div.menubtn {
-	display: none;
-   visibility: hidden
-  }
-	
-}
+
 
 
 
@@ -197,6 +186,17 @@ img {
 img:hover {
   opacity: 0.5;
 }
+
+
+/* To hide sidenav & menubtn*/ 
+div.sidenav {
+   display: none;
+   visibility: hidden
+  }
+div.menubtn {
+	display: none;
+   visibility: hidden
+  }	
 
 
 #topnav a {
