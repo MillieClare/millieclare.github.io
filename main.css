@@ -1,12 +1,11 @@
 
 
 /*For mobiles */
-@media(min-width: 200px) and (max-width: 599px) {
+@media (min-width: 200px) and (max-width: 599px) {
  .grid {
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, 20%) 50%;
   } 
-
 	
 #topnav a {
   background-color: gray;
@@ -35,7 +34,7 @@
 
 
 /*For tablets */
-@media(min-width: 601px) and (max-width: 768px) {
+@media (min-width: 601px) and (max-width: 768px) {
   .grid {
     grid-template-columns: 100%;
     grid-template-rows: repeat(4, 20%) 50%;
@@ -96,7 +95,7 @@ But instead it hides IT ALL NO MATTER THE WIDTH.*/
 
 
 /* To hide topnav if between tablet sizes & show sidenav and menubtn*/ 
-@media(min-width: 600px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 768px) {
 #topnav {
     visibility: hidden;
   }
