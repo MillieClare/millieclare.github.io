@@ -60,8 +60,9 @@ window.onload = function() {
     var toRotate = elements[i].getAttribute('data-rotate');
       console.log(toRotate);
     var period = elements[i].getAttribute('data-period');
+       toRotate = [ "I\'m Millie.", "it\'s me.", "how are you?", "and welcome." ];
     if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      new TxtRotate(elements[i], toRotate, period);
     }
   }
   // INJECT CSS
