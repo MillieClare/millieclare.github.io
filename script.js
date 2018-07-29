@@ -12,7 +12,7 @@ function closeNav() {
 }
 
 
-// Type carousel from https://speckyboy.com/css-javascript-text-animation-snippets/ 
+// Type carousel tweaked from https://speckyboy.com/css-javascript-text-animation-snippets/ 
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -57,13 +57,9 @@ TxtRotate.prototype.tick = function() {
 window.onload = function() {
   var elements = document.getElementsByClassName('txt-rotate');
   for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-      console.log(toRotate);
     var period = elements[i].getAttribute('data-period');
-       toRotate = [ "I\'m Millie.", "it\'s me.", "how are you?", "and welcome." ];
-    if (toRotate) {
+    var toRotate = [ "I\'m Millie.", "it\'s me.", "how are you?", "and welcome." ];
       new TxtRotate(elements[i], toRotate, period);
-    }
   }
   // INJECT CSS
   var css = document.createElement("style");
