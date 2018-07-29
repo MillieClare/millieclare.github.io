@@ -95,11 +95,19 @@ But instead it hides IT ALL NO MATTER THE WIDTH.*/
 /*end of tablet*/
 
 
-/* To hide topnav if between tablet sizes*/ 
+/* To hide topnav if between tablet sizes & show sidenav and menubtn*/ 
 @media(min-width: 600px) and (max-width: 768px) {
 #topnav {
     visibility: hidden;
   }
+div.sidenav {
+    display: block;
+    visibility: visible;
+  }
+div.menubtn {
+  visibility: visible;
+  display: block;
+}
 }
 
 
@@ -115,18 +123,7 @@ div.menubtn {
   }
 	
 }
-/* To show sidenav*/ 
-@media(min-width: 600px) and (max-width: 768px) {
-div.sidenav {
-    display: block;
-    visibility: visible;
-  }
-div.menubtn {
-  visibility: visibile;
-  display: block;
-}
-	
-}
+
 
 
 
