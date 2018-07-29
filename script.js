@@ -12,7 +12,7 @@ function closeNav() {
 }
 
 
-// Type carousel
+// Type carousel from https://speckyboy.com/css-javascript-text-animation-snippets/ 
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
