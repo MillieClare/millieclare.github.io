@@ -146,7 +146,16 @@ h2 {
 }
 
 h3 {
+  font-size: 14px;
+  color: SlateGrey;
+  text-align: left;
+}
 
+h4 {
+  font-size: 14px;
+  color: SlateGrey;
+  text-align: right;
+	
 }
 
 
