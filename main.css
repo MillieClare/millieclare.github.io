@@ -148,16 +148,7 @@ h3 {
 
 }
 
-p.alignleft {
-	font-size: 12px;
-	text-align: left;
-}
 
-p.alignright {
-	font-size: 12px;
-	text-align: right;
-
-}
 
 #footer {
   font-size: 0.75rem;
@@ -169,10 +160,29 @@ p.alignright {
   padding-top: 75px;
   padding-bottom: 75px;
   font-family: "Raleway", sans-serif;
-  
-
-  
+    
 }
+
+#portfolio {
+	width: 300px;
+	height: auto;
+	border: 1px solid SlateGrey;
+	align-content: left;
+	padding-left: 100px;	
+	
+}
+
+#twitchbot {
+	width: 300px;
+	height: auto;
+	border: 1px solid SlateGrey;
+	align-content: right;
+	padding-right: 100px;
+	
+	
+}
+
+
 img {
   border-radius: 50%;
   max-width: 100%;
