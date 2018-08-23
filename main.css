@@ -98,6 +98,10 @@ a:active {
   margin-bottom: 20px;
 }
 
+.about_pictures:hover {
+  opacity: 0.5;
+}
+
 .carousel_picture_page {
   height: 800px;
   width: 400px;
@@ -112,11 +116,7 @@ a:active {
   height: 640px;
   width: 292px;
 }
-/*changed display from flex to center. This changed how the words and links were spaced. Why?
-to make something centre, margin should be auto and display as a block element. 
-This doesn't make the nav align centre.*/
-/*need to get nav to change link colour so it doesn't affect
-all of the links */
+
 header nav {
   display: flex;
   justify-content: center;
@@ -144,4 +144,6 @@ header nav:hover {
 .top-margin-space-100px {
   margin-top: 100px;
 }
+
+
 
