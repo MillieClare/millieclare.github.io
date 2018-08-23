@@ -1,296 +1,146 @@
-
-
-/*For mobiles */
-@media (min-width: 200px) and (max-width: 599px) {
- .grid {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, 20%) 50%;
-  } 
-	
-#topnav a {
-  background-color: gray;
-  width: 100%;
-  text-decoration: none;
-  
-}
-#topnav a:hover {
-	background-color: silver;
-	font-weight: bold;
-	text-decoration: none;
-	
-	}
-
-.hero {
-  grid-row: 5 / span 1;
-	 
-}
-
-	
-}	
-
-
-/*end of mobile*/
-
-
-
-/*For tablets */
-@media (min-width: 601px) and (max-width: 768px) {
-  .grid {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, 20%) 50%;
-    grid-row-gap: 20px;
-  }
-
-/*this is my fancy side nav which is going to be SO DOPE. I want this for tablets only, but because of previously mentioned 
-background colour issues I've started playing with it in here. You can see it in the index.HTML file too. I've also ended up putting
-the little bit of JS I use for it in there too. I did upload a seperate JS file with it in, but I don't think I linked them properly,
-I'd like to learn how for the final site.
-
-The code works for this side bar, which IS AWESOME. The bit that doesn't work, and why it's not currently showing up on the site, 
-is that I've added in a "don't show this bit of stuff when the screen is bigger than 768px" to try and make it only work for tablets.
-But instead it hides IT ALL NO MATTER THE WIDTH.*/
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1; /*stack order*/
-    top: 0;
-    left: 0;
-    background-color: SlateGrey;
-    overflow-x: hidden;/*overflow on the left and right sides and overflow-y is for the tops and bottoms*/
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: LightSkyBlue;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: RoyalBlue;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-	
-	
-}
-
-/*end of tablet*/
-
-
-/* To hide topnav if between tablet sizes & show sidenav and menubtn*/ 
-@media (min-width: 600px) and (max-width: 768px) {
-#topnav {
-    visibility: hidden;
-  }
-div.sidenav {
-    display: block;
-    visibility: visible;
-  }
-div.menubtn {
-  visibility: visible;
-  display: block;
-}
-}
-
-
-
-
-
-
-
-
 body {
 	height: 100%;
 	margin: 0px;
 	padding:0px;
 	width: 100%;
-
-	
 }
 
 p {
-  colour: SlateGrey;
-  font-size: 12px;
-  text-align: center;
+  color: darkslategrey;
+  font-size: 15px;
+  text-align: justify;
+  margin-top: 30px;
+  font-family: "Raleway", sans-serif;
 }
-	
 
+center {
+  color: darkslategrey;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Raleway", sans-serif;
+}
+      
+  
 h1 {
-  font-size: 18px;
+  font-size: 24px;
   color: #2f5da8;
   margin-top: 30px;
   text-align: center; 
+  font-family: "Raleway", sans-serif;
 }
-
+  
 h2 {
   font-size: 14px;
   color: SlateGrey;	
   text-align: center;
+  font-family: "Raleway", sans-serif;
 }
-
+  
 h3 {
-  font-size: 14px;
-  color: SlateGrey;
-  text-align: left;
+  font-size: 20px;
+  color: darkslategrey;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
 }
-
+  
 h4 {
   font-size: 14px;
   color: SlateGrey;
   text-align: right;
-	
+  font-family: "Raleway", sans-serif;   
 }
 
-
-
-#footer {
-  font-size: 0.75rem;
-  bottom: 10px;
+a:link {
+  text-decoration-color: slategray;
+  margin-top: 30px;
   text-align: center;
+  color: #2f5da8;;
 }
 
-
-.hero {
-  padding-top: 75px;
-  padding-bottom: 75px;
-  font-family: "Raleway", sans-serif;
-  text-align: center;  
+a:visited {
+  text-decoration-color: slategray;
+  margin-top: 30px;
+  text-align: center;
+  color: #2f5da8;
 }
 
-#portfolio {
-	width: 300px;
-	height: auto;
-	border: 1px solid SlateGrey;
-	align-content: left;
-	padding-left: 100px;	
-	
+a:hover {
+  margin-top: 30px;
+  text-align: center;
+  color: #2f5da8;
 }
 
-#twitchbot {
-	width: 300px;
-	height: auto;
-	border: 1px solid SlateGrey;
-	align-content: right;
-	padding-right: 100px;
-	
-	
+a:active {
+  text-decoration-color: slategray;
+  margin-top: 30px;
+  text-align: center;
+  color: #2f5da8;
 }
 
-
-img {
+.profile_picture {
   border-radius: 50%;
-  max-width: 100%;
-  height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
-img:hover {
+  
+.profile_picture:hover {
   opacity: 0.5;
 }
 
+.about_pictures {
+  border-radius: 25px;
+  height: 200px;
+  width: 200px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
 
-/* To hide sidenav & menubtn*/ 
-div.sidenav {
-   display: none;
-   visibility: hidden
-  }
-div.menubtn {
-	display: none;
-   visibility: hidden
-  }	
+.carousel_picture_page {
+  height: 800px;
+  width: 400px;
+}
 
+.carousel_picture_page_height {
+  height: 200px;
+  width: 400px;
+}
 
-#topnav a {
-  display: block;
-  color: DeepSkyBlue;
+.carousel_picture_page_width {
+  height: 640px;
+  width: 292px;
+}
+/*changed display from flex to center. This changed how the words and links were spaced. Why?
+to make something centre, margin should be auto and display as a block element. 
+This doesn't make the nav align centre.*/
+/*need to get nav to change link colour so it doesn't affect
+all of the links */
+header nav {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-decoration: overline;
+	
+}
+
+header nav:hover {
+  text-decoration-style: underline;
+  text-decoration-color: slategray;
   text-align: center;
-  float: left;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 0px;
-  padding-right: 0px;
-  font-family: "Raleway", sans-serif;
-  margin-top: 5px;
+  color: #2f5da8;
+	
 }
 
-a:link {
-    text-decoration: none;
-	color: DeepSkyBlue;
+.top-margin-space-40px {
+  margin-top: 40px;
 }
 
-a:visited {
-    text-decoration: none;
-	color: DeepSkyBlue;
+.top-margin-space-50px {
+  margin-top: 50px;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: DeepSkyBlue;
-    text-decoration-style: dashed;
+.top-margin-space-100px {
+  margin-top: 100px;
 }
 
-a:active {
-    text-decoration: none;
-	text-decoration-line: overline underline;
-	color: DeepSkyBlue;
-}
-
-#mainFloatIn {
-    margin-top: 25px;
-    font-size: 16px;
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
-}
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}
