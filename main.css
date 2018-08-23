@@ -91,9 +91,10 @@ a:active {
 
 .about_pictures {
   border-radius: 25px;
-  height: 200px;
-  width: 200px;
-  margin-left: 30px;
+  height: 180px;
+  width: 180px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 20px;
 }
 
