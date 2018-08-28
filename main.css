@@ -38,16 +38,17 @@ h2 {
 }
   
 h3 {
-  font-size: 20px;
+  font-size: 18px;
   color: darkslategrey;
   text-align: center;
   font-family: "Raleway", sans-serif;
+  text-decoration: underline;
 }
   
 h4 {
-  font-size: 14px;
-  color: SlateGrey;
-  text-align: right;
+  font-size: 16px;
+  color: darkslategrey;
+  text-align: center;
   font-family: "Raleway", sans-serif;   
 }
 
@@ -81,8 +82,7 @@ a:active {
 .profile_picture {
   border-radius: 50%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
   
 .profile_picture:hover {
@@ -127,7 +127,7 @@ header nav {
 
 header nav:hover {
   text-decoration-style: underline;
-  text-decoration-color: slategray;
+  text-decoration-color: slategray;  
   text-align: center;
   color: #2f5da8;
 	
@@ -141,9 +141,15 @@ header nav:hover {
   margin-top: 50px;
 }
 
+.top-margin-space-85px {
+  margin-top: 85px;
+}
+
 .top-margin-space-100px {
   margin-top: 100px;
 }
 
-
+.top-margin-space-150px {
+  margin-top: 150px;
+}
 
