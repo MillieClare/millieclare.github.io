@@ -53,3 +53,10 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+
+
+//Return to top
+
+$('#goTop').on('click', function(e){
+  $("html, body").animate({scrollTop: $("#top").offset().top}, 500);
+});
