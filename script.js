@@ -1,5 +1,6 @@
 // Type carousel tweaked from https://speckyboy.com/css-javascript-text-animation-snippets/ 
-var TxtRotate = function(el, toRotate, period) {
+// Now uses jQuery
+var TxtRotate = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
@@ -9,7 +10,7 @@ var TxtRotate = function(el, toRotate, period) {
   this.isDeleting = false;
 };
 
-TxtRotate.prototype.tick = function() {
+TxtRotate.prototype.tick = function () {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
 
@@ -19,7 +20,7 @@ TxtRotate.prototype.tick = function() {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  $(this.el).html('<span class="wrap">' + this.txt + '</span>');
 
   var that = this;
   var delta = 300 - Math.random() * 100;
@@ -35,28 +36,50 @@ TxtRotate.prototype.tick = function() {
     delta = 500;
   }
 
-  setTimeout(function() {
+  setTimeout(function () {
     that.tick();
   }, delta);
 };
-
-window.onload = function() {
+//JS 
+/*
+window.onload = function () {
   var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
+  for (var i = 0; i < elements.length; i++) {
     var period = elements[i].getAttribute('data-period');
-    var toRotate = [ "I\'m Millie.", "it\'s me.", "how are you?", "and welcome." ];
-      new TxtRotate(elements[i], toRotate, period);
+    var toRotate = ["I\'m Millie.", "it\'s me.", "how are you?", "and welcome."];
+    new TxtRotate(elements[i], toRotate, period);
+  } */
+
+//jQuery 
+$(document).ready(() => {
+  let elements = $(".txt-rotate");
+  for (let i = 0; i < elements.length; i++) {
+    let period = $(elements[i]).attr('data-period');
+    let toRotate = ["I\'m Millie.", "it\'s me.", "how are you?", "and welcome."];
+    new TxtRotate(elements[i], toRotate, period);
   }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-  document.body.appendChild(css);
-};
+});
+
+
+// INJECT CSS
+var css = document.createElement("style");
+css.type = "text/css";
+css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+document.body.appendChild(css);
 
 
 //Return to top
+$(document).ready(() => {
+  $('#goTop').on('click', function (e) {
+    $("html, body").animate({ scrollTop: $("#top").offset().top }, 500);
+  });
+  /*
+  $About2.on('mouseenter', () => {
+    $nav_menu.show();
+  });
+  
+  $About2.on('mouseleave', () => {
+    $nav_menu.hide();
+  }); */
 
-$('#goTop').on('click', function(e){
-  $("html, body").animate({scrollTop: $("#top").offset().top}, 500);
 });
