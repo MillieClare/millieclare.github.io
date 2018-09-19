@@ -18,6 +18,10 @@ body {
     letter-spacing: -0.5px;
 }
 
+a:hover {
+    text-decoration: none;
+  }
+
 .product-image:hover {
     opacity: 0.7;
 }
