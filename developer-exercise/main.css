@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:500,700');
+
+body {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.product-name {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    color: black;
+    letter-spacing: -0.5px;
+}
+
+.product-image:hover {
+    opacity: 0.7;
+}
+
+.recommendations-heading {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color:black;
+    letter-spacing: -0.0px;
+    margin-top: 6px;
+    margin-bottom: -12px;
+}
+
+.price {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: small;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+    color: black;
+    letter-spacing: 0px;  
+}
+
+.container hr {
+    border-top: 1px solid #C0C0C0;    
+}
+
+/*
+https://github.com/kenwheeler/slick/issues/2651
+Fix for touch vs click bug
+*/
+.slick-dots li button:focus:before {
+    opacity: 0.25;
+}
+
+
+.slick-dots li.slick-active button:focus:before {
+    opacity: .75;
+    color: #000;
+}
