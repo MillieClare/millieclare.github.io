@@ -23,7 +23,7 @@ a:hover {
     color: black;
   }
 
-.product-image:hover, .product-name:hover {
+.product-image:hover {
     opacity: 0.7;
 }
 
