@@ -25,41 +25,44 @@ function showRecommendations(recommendationsDivId, recommendationsData, recommen
     content += '</div>';
     recommendationsElement.append(content);
 
-    //carousel functionality using slick
-    //http://kenwheeler.github.io/slick/
-    $('.responsive-carousel').slick({
-        dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: recommendationsToShow,
-        slidesToScroll: maxRecommendations - recommendationsToShow,
-        responsive: [
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
+    //initialise carousel only when entire page is loaded
+    $(window).on("load", function () {
+        //carousel functionality using slick
+        //http://kenwheeler.github.io/slick/
+        $('.responsive-carousel').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: recommendationsToShow,
+            slidesToScroll: maxRecommendations - recommendationsToShow,
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
                 }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+            ]
+        });
+
+        //equal height fix from https://github.com/kenwheeler/slick/issues/179
+
+        $('.responsive-carousel').on('setPosition', function () {
+            $(this).find('.slick-slide').height('auto');
+            let slickTrack = $(this).find('.slick-track');
+            let slickTrackHeight = $(slickTrack).height();
+            $(this).find('.slick-slide').css('height', slickTrackHeight + 'px');
+        });
+
     });
-
-    //equal height fix from https://github.com/kenwheeler/slick/issues/179
-
-    $('.responsive-carousel').on('setPosition', function () {
-        $(this).find('.slick-slide').height('auto');
-        let slickTrack = $(this).find('.slick-track');
-        let slickTrackHeight = $(slickTrack).height();
-        $(this).find('.slick-slide').css('height', slickTrackHeight + 'px');
-    });
-
 }
 
 
