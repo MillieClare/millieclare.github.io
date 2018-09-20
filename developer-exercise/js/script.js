@@ -26,7 +26,7 @@ function showRecommendations(recommendationsDivId, recommendationsData, recommen
     recommendationsElement.append(content);
 
     //initialise carousel only when entire page is loaded
-    $(window).on("load", function () {
+    $('.product-image').on("load", function () {
         //carousel functionality using slick
         //http://kenwheeler.github.io/slick/
         $('.responsive-carousel').slick({
